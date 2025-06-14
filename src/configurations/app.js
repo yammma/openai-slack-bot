@@ -11,7 +11,8 @@ const env = require("./env");
 const app = new App({
   token: env.slack.botToken,
   signingSecret: env.slack.signingSecret,
-  socketMode: true,
+  // socketMode: true,
+  socketMode: false,
   appToken: env.slack.appToken,
   // Socket Mode doesn't listen on a port, but in case you want your app to respond to OAuth,
   // you still need to listen on some port!
